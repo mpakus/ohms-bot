@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
 
 require 'standalone_migrations'
 StandaloneMigrations::Tasks.load_tasks

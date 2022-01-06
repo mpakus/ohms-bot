@@ -1,26 +1,55 @@
+GIT
+  remote: https://github.com/thuss/standalone-migrations.git
+  revision: ab45924b349142b81f691a4ceac9e3749eff8b83
+  specs:
+    standalone_migrations (6.1.0)
+      activerecord (>= 4.2.7, < 6.2.0, != 5.2.3.rc1, != 5.2.3)
+      railties (>= 4.2.7, < 6.2.0, != 5.2.3.rc1, != 5.2.3)
+      rake (>= 10.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (7.0.0)
-      activesupport (= 7.0.0)
-    activerecord (7.0.0)
-      activemodel (= 7.0.0)
-      activesupport (= 7.0.0)
-    activesupport (7.0.0)
+    actionpack (6.1.4.4)
+      actionview (= 6.1.4.4)
+      activesupport (= 6.1.4.4)
+      rack (~> 2.0, >= 2.0.9)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.2.0)
+    actionview (6.1.4.4)
+      activesupport (= 6.1.4.4)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    activemodel (6.1.4.4)
+      activesupport (= 6.1.4.4)
+    activerecord (6.1.4.4)
+      activemodel (= 6.1.4.4)
+      activesupport (= 6.1.4.4)
+    activesupport (6.1.4.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
+    builder (3.2.4)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.1.9)
+    crass (1.0.6)
+    debase (0.2.4.1)
+      debase-ruby_core_source (>= 0.10.2)
+    debase-ruby_core_source (0.10.14)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     dry-inflector (0.2.1)
+    erubi (1.10.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.15.4)
@@ -30,22 +59,45 @@ GEM
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    loofah (2.13.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    method_source (1.0.0)
+    mini_portile2 (2.6.1)
     minitest (5.15.0)
     multipart-post (2.1.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    racc (1.6.0)
+    rack (2.2.3)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.4.2)
+      loofah (~> 2.3)
+    railties (6.1.4.4)
+      actionpack (= 6.1.4.4)
+      activesupport (= 6.1.4.4)
+      method_source
+      rake (>= 0.13)
+      thor (~> 1.0)
     rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rerun (0.13.1)
       listen (~> 3.0)
+    ruby-debug-ide (0.7.3)
+      rake (>= 0.8.1)
     sqlite3 (1.4.2)
-    standalone_migrations (1.0.13)
-      activerecord (>= 3)
-      rake
     telegram-bot-ruby (0.16.0)
       dry-inflector
       faraday
       virtus (~> 2.0)
+    thor (1.2.1)
     thread_safe (0.3.6)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -53,18 +105,21 @@ GEM
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
+    zeitwerk (2.5.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
+  activerecord (< 6.2.0)
+  debase
   faraday (~> 0.9.2)
   i18n
   rake
   rerun
+  ruby-debug-ide
   sqlite3
-  standalone_migrations
+  standalone_migrations!
   telegram-bot-ruby
 
 BUNDLED WITH
