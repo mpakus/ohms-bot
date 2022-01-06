@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'telegram-bot-ruby'
+gem 'activerecord'
+gem 'faraday', '~> 0.9.2'
+gem 'standalone_migrations'
+gem 'i18n'
+gem 'sqlite3'
+gem 'rake'
+gem 'rerun'
