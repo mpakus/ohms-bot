@@ -1,3 +1,10 @@
 en:
-  greeting_message: "Hi! Telegram is awesome!"
-  farewell_message: "Bye! I'll miss you :("
+  start: "Hi! Telegram is awesome!"
+  stop: "Bye! I'll miss you :("
+  help: "
+    /create -
+
+    /deploy (:branch:) -
+
+    /restart -
+  "
