@@ -6,5 +6,8 @@ en:
 
     /deploy (:branch:) -
 
+    /list
+
     /restart -
   "
+  created: Project "%{name}" with Github %{github} created!
