@@ -8,5 +8,8 @@ gem 'i18n'
 gem 'sqlite3'
 gem 'rake'
 gem 'rerun'
-gem 'debase'
-gem 'ruby-debug-ide'
+
+group :development do
+  gem 'debase'
+  gem 'ruby-debug-ide'
+end
