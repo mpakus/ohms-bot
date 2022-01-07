@@ -1,5 +1,6 @@
-adapter: sqlite3
-database: ohms-beast
-encoding: unicode
-pool: 5
-timeout: 5000
+development:
+  adapter: sqlite3
+  database: db/ohms-beast.sqlite
+  encoding: unicode
+  pool: 5
+  timeout: 5000

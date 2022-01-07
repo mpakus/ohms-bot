@@ -10,11 +10,19 @@ class AppConfigurator
   end
 
   def token
-    YAML.safe_load(IO.read('config/secrets.yml'))['telegram_bot_token']
+    secrets['telegram_bot_token']
+  end
+
+  def apps_path
+    secrets['apps_path']
   end
 
   def logger
     Logger.new($stdout, Logger::DEBUG)
+  end
+
+  def secrets
+    @secrets ||= YAML.safe_load(IO.read('config/secrets.yml'))
   end
 
   private
