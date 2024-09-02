@@ -1,3 +1,3 @@
-# OhMySatan Bot
+# OhMyS Bot
 
 Telegram Bot for Deployment and monitoring Docker Compose apps. 
