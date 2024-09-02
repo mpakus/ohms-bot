@@ -13,7 +13,7 @@ config.configure
 token = config.token
 logger = config.logger
 
-logger.debug 'Starting OhMySatan Bot'
+logger.debug 'Starting OhMyS Bot'
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
